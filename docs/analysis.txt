@@ -1,0 +1,43 @@
+Cours
+ID(PK)
+Nom
+Description
+Catégorie
+Durée
+Places disponibles
+
+Étudiants
+ID(PK)
+Nom
+Prénom
+Date de naissance
+Email
+Téléphone
+Adresse
+
+Enseignants
+ID(PK)
+Nom
+Prénom
+Spécialisation
+Email
+Téléphone
+
+Horaires
+ID(PK)
+Date début
+Date fin
+Salle de classe
+
+Inscriptions
+ID(PK)
+Date d'inscription
+Note
+
+RELATIONS
+
+Cours - Enseignants : Relation many-to-many
+Cours - Étudiants : Relation many-to-many
+Cours - Horaires : Relation one-to-many
+Horaires - Salles de classe : Relation one-to-many
+Étudiants - Inscriptions : Relation one-to-many
